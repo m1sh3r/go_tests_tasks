@@ -1,0 +1,4 @@
+id,a,b,c,root1,root2,status
+"eq,3",2,0,-8,2,-2,"contains,comma"
+eq1,1,-3,2,1,2,solved
+eq2,1,2,5,,,no_real_roots
