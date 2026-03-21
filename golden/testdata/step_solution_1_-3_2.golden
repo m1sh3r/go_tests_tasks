@@ -1,0 +1,5 @@
+Step 1: Calculate discriminant D = b^2 - 4ac = 9 - 8 = 1
+Step 2: D > 0 -> two real roots
+Step 3: x1 = 2
+Step 4: x2 = 1
+Answer: x = {1, 2}
