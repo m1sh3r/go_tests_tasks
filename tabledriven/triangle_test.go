@@ -16,7 +16,6 @@ func TestTriangleType(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			gotType, err := TriangleType(tc.sides[0], tc.sides[1], tc.sides[2])
 			if tc.wantErr {

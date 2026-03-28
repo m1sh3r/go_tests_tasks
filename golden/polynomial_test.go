@@ -13,7 +13,6 @@ func TestFormatPolynomialGolden(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			got := FormatPolynomial(tc.coeffs)
 			assertGolden(t, tc.name, got)

@@ -24,7 +24,6 @@ func TestToBase(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			got, err := ToBase(tc.n, tc.base)
 			if tc.wantErr {

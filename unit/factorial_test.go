@@ -22,7 +22,6 @@ func runFactorialCases(t *testing.T, implName string, fn func(int) (int64, error
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(fmt.Sprintf("%s_n_%d", implName, tc.n), func(t *testing.T) {
 			got, err := fn(tc.n)
 			if tc.wantErr {

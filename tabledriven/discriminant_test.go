@@ -19,7 +19,6 @@ func TestAnalyzeDiscriminant(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			gotD, gotRoots := AnalyzeDiscriminant(tc.a, tc.b, tc.c)
 			if !almostEqual(gotD, tc.wantD, 1e-18) {

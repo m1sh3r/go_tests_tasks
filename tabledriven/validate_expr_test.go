@@ -18,7 +18,6 @@ func TestValidateExpr(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.desc, func(t *testing.T) {
 			err := ValidateExpr(tc.expr)
 			if tc.valid && err != nil {

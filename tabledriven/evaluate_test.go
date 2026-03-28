@@ -16,7 +16,6 @@ func TestEvaluate(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			got := Evaluate(tc.coeffs, tc.x)
 			if !almostEqual(got, tc.want, 1e-9) {

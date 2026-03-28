@@ -38,7 +38,6 @@ func TestQuadraticRoots(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			got, err := QuadraticRoots(tc.a, tc.b, tc.c)
 			if tc.wantErr {
